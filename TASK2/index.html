@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Web Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <h1>🌐 Web Development Task 2</h1>
+    <p class="subtitle">Creative Contact Form + Dynamic To-Do List</p>
+
+    <div class="grid">
+      <!-- Contact Form -->
+      <div class="box">
+        <h2>📧 Contact Form</h2>
+        <p class="desc">Collect user inputs and validate using JavaScript.</p>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- To-Do List -->
+      <div class="box">
+        <h2>📝 To-Do List</h2>
+        <p class="desc">Add or remove tasks using JavaScript DOM manipulation.</p>
+        <div class="todo-input">
+          <input type="text" id="todoInput" placeholder="Add a new task..." />
+          <button onclick="addTodo()">Add</button>
+        </div>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+
+    <footer>🚀 Built by keerthi | ApexPlanet Internship Task 2 © 2025</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
