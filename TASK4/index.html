@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">YourName</h1>
+      <nav>
+        <button class="nav-toggle" aria-label="toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container">
+        <h2>Hi — I'm <span class="accent">YourName</span></h2>
+        <p>Front-end developer / Problem solver. I build responsive web projects using HTML, CSS and JavaScript.</p>
+        <a class="btn" href="#projects">See Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About</h3>
+        <p>Short bio: mention skills, tools, goals. Keep it 2–3 lines.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Example project cards -->
+          <article class="card">
+            <h4>Todo App</h4>
+            <p>Task manager with localStorage.</p>
+            <a href="#" class="small-btn" onclick="alert('This would open the project')">Open</a>
+          </article>
+
+          <article class="card">
+            <h4>Product List</h4>
+            <p>Filter & sort demo.</p>
+            <a href="#" class="small-btn" onclick="alert('This would open the project')">Open</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <form id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> YourName — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
